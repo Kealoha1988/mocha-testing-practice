@@ -5,5 +5,8 @@ module.exports = {
     }else{
       return "excuse me??"
     }
+  },
+  addNumbers: function(a, b){
+    return a + b
   }
 }
