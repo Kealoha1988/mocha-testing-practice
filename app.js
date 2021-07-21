@@ -1,5 +1,9 @@
 module.exports = {
-  hello: function(){
+  hello: function(word){
+    if (word == "hello"){
   return "Hello World!"
+    }else{
+      return "excuse me??"
+    }
   }
 }
