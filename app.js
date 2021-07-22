@@ -8,5 +8,12 @@ module.exports = {
   },
   addNumbers: function(a, b){
     return a + b
+  },
+  checkIfUpcase: function(word){
+    if(word == word.toUpperCase()){
+      return true
+    }else{
+      return false
+    }
   }
 }

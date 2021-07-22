@@ -2,6 +2,7 @@ const assert = require('chai').assert;
 const app = '../app'
 const hello = require('../app').hello
 const addNumbers = require('../app').addNumbers
+const checkIfUpcase = require('../app').checkIfUpcase
 
 describe('App', () => {
   describe('hello()', () => {
@@ -31,6 +32,12 @@ describe('App', () => {
     it('add numbers should return type number', () => {
       let result = addNumbers()
       assert.typeOf(result, 'number')
+    })
+  })
+  describe('checkIfUpcase()', () => {
+    it('should return true if all upcase', () => {
+      let result = checkIfUpcase('JOSEPH')
+      assert.equal(result, true)
     })
   })
 
