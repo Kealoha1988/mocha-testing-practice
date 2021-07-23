@@ -21,23 +21,27 @@ describe('App', () => {
   })
   describe('addNumbers()', () => {
     
-    it('should add the 2 argumets', () => {
+    it('should add both arguments and return the value', () => {
       let result = addNumbers(1, 5)
       assert.equal(result, 6)
     })
-    it('should add the 2 argumets', () => {
-      let result = addNumbers(5, 5)
-      assert.equal(result, 10)
-    })
     it('add numbers should return type number', () => {
-      let result = addNumbers()
+      let result = addNumbers(5, 5)
       assert.typeOf(result, 'number')
+    })
+    it('add numbers should not return type string', () => {
+      let result = addNumbers(5, 5)
+      assert.notTypeOf(result, 'string', 'numbers are not strings')
+      })
+      it('should check if input is a number', () => {
+      let result = addNumbers('hello', 6)
+      assert.equal(result, "only numbers please")
     })
   })
   describe('checkIfUpcase()', () => {
     it('should return true if all upcase', () => {
       let result = checkIfUpcase('JOSEPH')
-      assert.equal(result, true)
+      assert.strictEqual(result, true, "this thing works")
     })
   })
 
