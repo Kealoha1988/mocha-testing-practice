@@ -13,11 +13,18 @@ module.exports = {
     return a + b
     }
   },
+
+  
   checkIfUpcase: function(word){
     if(word == word.toUpperCase()){
       return true
     }else{
       return false
     }
-  }
+  },
+// Make function that takes and array as an argument. Returns the array as camelCase
+
+turnToCamelCase: function(array){
+  
+}
 }
