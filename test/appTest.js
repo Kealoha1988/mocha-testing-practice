@@ -45,6 +45,12 @@ describe('App', () => {
       assert.strictEqual(result, true, "this thing works")
     })
   })
+    describe('turnToCamelCase()', () => {
+    it('should turn array elements into camelCase string', () => {
+      let result = turnToCamelCase(['Hello', 'this', 'sHould', 'LOOK', 'diFFernt'])
+      assert.strictEqual(result, 'helloThisShouldLookDiffernt')
+    })
+  })
   
 
 })
