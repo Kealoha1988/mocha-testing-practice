@@ -50,6 +50,10 @@ describe('App', () => {
       let result = turnToCamelCase(['Hello', 'this', 'sHould', 'LOOK', 'diFFernt'])
       assert.strictEqual(result, 'helloThisShouldLookDiffernt')
     })
+    it('should ignore data that is not string'), () => {
+      let result = turnToCamelCase(["hello", "THIS", "iS", "ALOt", "of", ["hd", "tv"], "StUfF", "to", 1, "thInk", "AbOut", 200])
+      assert.equal(result, 'helloThisIsAlotOfStuffToThinkAbout')
+    }
   })
   
 
