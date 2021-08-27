@@ -3,6 +3,7 @@ const app = '../app'
 const hello = require('../app').hello
 const addNumbers = require('../app').addNumbers
 const checkIfUpcase = require('../app').checkIfUpcase
+const turnToCamelCase = require('../app').turnToCamelCase
 
 describe('App', () => {
   describe('hello()', () => {
@@ -44,5 +45,6 @@ describe('App', () => {
       assert.strictEqual(result, true, "this thing works")
     })
   })
+  
 
 })
