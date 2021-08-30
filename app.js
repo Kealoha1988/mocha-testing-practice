@@ -41,5 +41,16 @@ turnToCamelCase: function(array){
   const restOfArray = array.map(word => capitatlizer(word)).slice(1).join("")
   const answer = firstWord + restOfArray
   return answer
-}
+  }
+
+// knapsack problem
+// List of items, where every item has avaliue and a weight. You have a bag that holds a maximum weight
+// of x. Write a program that maximizes the value of the items you put into the bag whilst ensuring
+// that you don't exceed the maximum weight
+
+knapsackProblem: function(items){
+
+  }
+
+
 }
