@@ -41,7 +41,7 @@ turnToCamelCase: function(array){
   const restOfArray = array.map(word => capitatlizer(word)).slice(1).join("")
   const answer = firstWord + restOfArray
   return answer
-  }
+  },
 
 // knapsack problem
 // List of items, where every item has avaliue and a weight. You have a bag that holds a maximum weight
@@ -51,6 +51,7 @@ turnToCamelCase: function(array){
 knapsackProblem: function(items){
 
   }
+
 
 
 }

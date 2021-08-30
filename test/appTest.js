@@ -1,9 +1,10 @@
 const assert = require('chai').assert;
-const app = '../app'
-const hello = require('../app').hello
-const addNumbers = require('../app').addNumbers
-const checkIfUpcase = require('../app').checkIfUpcase
-const turnToCamelCase = require('../app').turnToCamelCase
+const testFunction = require('../app')
+const hello = testFunction.hello
+const addNumbers = testFunction.addNumbers
+const checkIfUpcase = testFunction.checkIfUpcase
+const turnToCamelCase = testFunction.turnToCamelCase
+const knapsackProblem = testFunction.knapsackProblem
 
 describe('App', () => {
   describe('hello()', () => {
@@ -54,6 +55,20 @@ describe('App', () => {
       let result = turnToCamelCase(["hello", "THIS", "iS", "ALOt", "of", ["hd", "tv"], "StUfF", "to", 1, "thInk", "AbOut", 200])
       assert.equal(result, 'helloThisIsAlotOfStuffToThinkAbout')
     }
+  })
+  describe('knapsackProblem()', () => {
+    it('should return items with max value that do not exceed max weight', () => {
+      const items = [
+        {id: 'a', value: 10, weight: 3},
+        {id: 'b', value: 6, weight: 8},
+        {id: 'c', value: 3, weight: 3}
+      ]
+      const maxWeight = 8
+      const result = knapsackProblem(items)
+      assert.equal(result, ['a', 'c'])
+
+
+    })
   })
   
 
