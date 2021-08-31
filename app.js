@@ -44,12 +44,37 @@ turnToCamelCase: function(array){
   },
 
 // knapsack problem
-// List of items, where every item has avaliue and a weight. You have a bag that holds a maximum weight
+// List of items, where every item has a value and a weight. You have a bag that holds a maximum weight
 // of x. Write a program that maximizes the value of the items you put into the bag whilst ensuring
 // that you don't exceed the maximum weight
 
-knapsackProblem: function(items){
+knapsackProblem: function(items, maxWeight){
 
+  let result = []
+  
+  const checkForBestValue = (item) => {
+    const average = item.value / item.weight
+    return {id: item.id, value: item.value, weight: item.weight, score: average}
+    }
+
+  const sortByBestValue = items.map(item => checkForBestValue(item)).sort((a, b) => b.score - a.score)
+
+  const addNumbers = (array) => {
+    let sum = 0 
+    for (item of array){
+      sum += item.weight
+      if (sum <= 8){
+        result.push(item)
+      }
+      }
+  }
+  
+  addNumbers(sortByBestValue)
+  
+
+
+
+  return  result.map(item => item.id)
   }
 
 

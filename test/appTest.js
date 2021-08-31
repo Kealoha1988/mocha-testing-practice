@@ -59,13 +59,20 @@ describe('App', () => {
   describe('knapsackProblem()', () => {
     it('should return items with max value that do not exceed max weight', () => {
       const items = [
-        {id: 'a', value: 10, weight: 3},
-        {id: 'b', value: 6, weight: 8},
-        {id: 'c', value: 3, weight: 3}
+        {id: 'a', value: 10, weight: 8},
+        {id: 'b', value: 49, weight: 7},
+        {id: 'c', value: 8, weight: 10},
+        {id: 'd', value: 7, weight: 1},
+        {id: 'e', value: 6, weight: .5},
+        {id: 'f', value: 5, weight: 1},
+        {id: 'g', value: 4, weight: 1},
+        {id: 'h', value: 3, weight: 1},
+        {id: 'i', value: 2, weight: 1},
+        {id: 'j', value: 1, weight: 1},
       ]
       const maxWeight = 8
-      const result = knapsackProblem(items)
-      assert.equal(result, ['a', 'c'])
+      const result = knapsackProblem(items, maxWeight)
+      assert.deepEqual(result, [ 'e', 'b' ] )
 
 
     })
