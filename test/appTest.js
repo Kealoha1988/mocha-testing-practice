@@ -74,7 +74,7 @@ describe('App', () => {
       const result = knapsackProblem(items, maxWeight)
       assert.deepEqual(result, [ 'e', 'b' ] )
     })
-        it('should return only up to 8 lbs', () => {
+    it('should return only up to 8 lbs', () => {
       const items = [
         {id: 'a', value: 100, weight: 2},
         {id: 'b', value: 100, weight: 2},
@@ -90,6 +90,23 @@ describe('App', () => {
       const maxWeight = 8
       const result = knapsackProblem(items, maxWeight)
       assert.deepEqual(result, [ 'a', 'b', 'c', 'd' ] )
+    })
+    it('should return empty array when given all items over weight', () => {
+      const items = [
+        {id: 'a', value: 100, weight: 10},
+        {id: 'b', value: 100, weight: 10},
+        {id: 'c', value: 100, weight: 10},
+        {id: 'd', value: 100, weight: 10},
+        {id: 'e', value: 100, weight: 10},
+        {id: 'f', value: 100, weight: 10},
+        {id: 'g', value: 100, weight: 10},
+        {id: 'h', value: 100, weight: 10},
+        {id: 'i', value: 100, weight: 10},
+        {id: 'j', value: 100, weight: 10},
+      ]
+      const maxWeight = 8
+      const result = knapsackProblem(items, maxWeight)
+      assert.deepEqual(result, [] )
     })
   })
   
