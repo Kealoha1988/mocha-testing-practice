@@ -76,6 +76,7 @@ knapsackProblem: function(items, maxWeight){
 
 ///chedk if number is an integer. The function takes in a number and checks if the number is an integer
   checkIfInteger: function(num){
+    return num % 1 === 0
 
   },
 }
