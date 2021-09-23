@@ -116,6 +116,11 @@ describe('App', () => {
       const result = checkIfInteger(8)
       assert.equal(result, true )
     })
+        it('should return false if num is not an integer', () => {
+     
+      const result = checkIfInteger(8.5)
+      assert.equal(result, false )
+    })
   })
   
 
