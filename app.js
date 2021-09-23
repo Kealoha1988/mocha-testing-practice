@@ -61,22 +61,21 @@ knapsackProblem: function(items, maxWeight){
 
   const addNumbers = (array) => {
     let sum = 0 
-    for (item of array){
+      for (item of array){
       sum += item.weight
-      if (sum <= 8){
+        if (sum <= 8){
         result.push(item)
       }
-      }
+    }
   }
   
   addNumbers(sortByBestValue)
   
-
-
-
   return  result.map(item => item.id)
-  }
+  },
 
+///chedk if number is an integer. The function takes in a number and checks if the number is an integer
+  checkIfInteger: function(num){
 
-
+  },
 }
