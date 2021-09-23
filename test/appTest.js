@@ -5,6 +5,7 @@ const addNumbers = testFunction.addNumbers
 const checkIfUpcase = testFunction.checkIfUpcase
 const turnToCamelCase = testFunction.turnToCamelCase
 const knapsackProblem = testFunction.knapsackProblem
+const checkIfInteger = testFunction.checkIfInteger
 
 describe('App', () => {
   describe('hello()', () => {
