@@ -110,6 +110,13 @@ describe('App', () => {
       assert.deepEqual(result, [] )
     })
   })
+  describe('checkIfInteger()', () => {
+    it('should return true if num is an integer', () => {
+     
+      const result = checkIfInteger(8)
+      assert.equal(result, true )
+    })
+  })
   
 
 })
