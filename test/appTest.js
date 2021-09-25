@@ -6,6 +6,7 @@ const checkIfUpcase = testFunction.checkIfUpcase
 const turnToCamelCase = testFunction.turnToCamelCase
 const knapsackProblem = testFunction.knapsackProblem
 const checkIfInteger = testFunction.checkIfInteger
+const fizzBuzz = testFunction.fizzBuzz
 
 describe('App', () => {
   describe('hello()', () => {
@@ -122,6 +123,7 @@ describe('App', () => {
       assert.equal(result, false )
     })
   })
+  describe
   
 
 })
