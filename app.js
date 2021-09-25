@@ -79,4 +79,8 @@ knapsackProblem: function(items, maxWeight){
     return num % 1 === 0
 
   },
+//if number is divisible by 3 return Fizz, if by 5 retrun Buzz, if by both 3 and 5 FizzBuzz
+  fizzBuzz: function(num){
+
+  }
 }
