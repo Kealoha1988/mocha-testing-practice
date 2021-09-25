@@ -118,12 +118,24 @@ describe('App', () => {
       assert.equal(result, true )
     })
         it('should return false if num is not an integer', () => {
-     
       const result = checkIfInteger(8.5)
       assert.equal(result, false )
     })
   })
-  describe
+  describe('fizzBuzz()', () => {
+    it('should return Fizz if number is divisible by 3', () => {
+      const result = fizzBuzz(9)
+      assert.equal(result, 'Fizz')
+    })
+    it('should return Buzz if number is divisible by 5', () => {
+      const result = fizzBuzz(10)
+      assert.equal(result, 'Buzz')
+    })
+    it('should return FizzBuzz if number is divisible by both 3 and 5', () => {
+      const result = fizzBuzz(15)
+      assert.equal(result, 'FizzBuzz')
+    })
+  })
   
 
 })
