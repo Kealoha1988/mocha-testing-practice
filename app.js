@@ -91,8 +91,20 @@ knapsackProblem: function(items, maxWeight){
        return 'Buzz'
      }
   },
-  ///GIVEN A ROMAN NUMERAL, CONVERT IT TO AN INTEGER
+  ///GIVEN A numeral NUMERAL, CONVERT IT TO AN INTEGER
   numeralToInteger: function(numeral){
-
+     //sequence of numeral letters
+     let arr = ['I','V','X','L','C','D','M'];
+    
+     //value of the respective numeral letters
+     let values = {
+         I: 1,
+         V: 5,
+	      X: 10,
+	     L: 50,
+	 C: 100,
+	 D: 500,
+	 M: 1000
+     }
   }
 }
