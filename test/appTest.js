@@ -137,9 +137,9 @@ describe('App', () => {
       assert.equal(result, 'FizzBuzz')
     })
   })
-  describe(numeralToInteger(), () => {
+  describe('numeralToInteger()', () => {
     it('should take a roman numeral and retun the interger that it represents', () => {
-      const result = numeralToInteger(V)
+      const result = numeralToInteger("V")
       assert.equal(result, 5)
     })
   })
