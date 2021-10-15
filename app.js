@@ -90,5 +90,9 @@ knapsackProblem: function(items, maxWeight){
      else if (num % 5 === 0){
        return 'Buzz'
      }
+  },
+  ///GIVEN A ROMAN NUMERAL, CONVERT IT TO AN INTEGER
+  numeralToInteger: function(numeral){
+
   }
 }

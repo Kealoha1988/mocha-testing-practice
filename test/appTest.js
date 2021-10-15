@@ -53,10 +53,10 @@ describe('App', () => {
       let result = turnToCamelCase(['Hello', 'this', 'sHould', 'LOOK', 'diFFernt'])
       assert.strictEqual(result, 'helloThisShouldLookDiffernt')
     })
-    it('should ignore data that is not string'), () => {
-      let result = turnToCamelCase(["hello", "THIS", "iS", "ALOt", "of", ["hd", "tv"], "StUfF", "to", 1, "thInk", "AbOut", 200])
-      assert.equal(result, 'helloThisIsAlotOfStuffToThinkAbout')
-    }
+    // it('should ignore data that is not string'), () => {
+    //   let result = turnToCamelCase(["hello", "THIS", "iS", "ALOt", "of", ["hd", "tv"], "StUfF", "to", 1, "thInk", "AbOut", 200])
+    //   assert.deepequal(result, 'helloThisIsAlotOfStuffToThinkAbout')
+    // }
   })
   describe('knapsackProblem()', () => {
     it('should return items with max value that do not exceed max weight', () => {
@@ -132,7 +132,7 @@ describe('App', () => {
       assert.equal(result, 'Buzz')
     })
     it('should return FizzBuzz if number is divisible by both 3 and 5', () => {
-      const result = fizzBuzz(15)
+      const result = fizzBuzz(30)
       assert.equal(result, 'FizzBuzz')
     })
   })
