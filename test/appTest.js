@@ -7,6 +7,7 @@ const turnToCamelCase = testFunction.turnToCamelCase
 const knapsackProblem = testFunction.knapsackProblem
 const checkIfInteger = testFunction.checkIfInteger
 const fizzBuzz = testFunction.fizzBuzz
+const numeralToInteger = testFunction.numeralToInteger
 
 describe('App', () => {
   describe('hello()', () => {
