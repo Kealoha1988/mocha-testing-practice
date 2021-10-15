@@ -142,6 +142,10 @@ describe('App', () => {
       const result = numeralToInteger("V")
       assert.equal(result, 5)
     })
+    it('should work for IV and XL', () => {
+      const result = numeralToInteger("IV")
+      assert.equal(result, 4)
+    })
   })
   
 

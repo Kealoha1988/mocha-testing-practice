@@ -115,7 +115,7 @@ knapsackProblem: function(items, maxWeight){
        }else{
         answer = answer - values[numeral[i]]
        }
-       arr.indexOf(numeral[i])
+       previous = arr.indexOf(numeral[i])
      }
      return answer
   }
