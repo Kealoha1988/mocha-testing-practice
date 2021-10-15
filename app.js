@@ -112,8 +112,10 @@ knapsackProblem: function(items, maxWeight){
      for(let i = numeral.length - 1; i >= 0; i--){
        if(arr.indexOf(numeral[i]) >= previous){
          answer = answer + values[numeral[i]]
+       }else{
+        answer = answer - values[numeral[i]]
        }
-
+       arr.indexOf(numeral[i])
      }
      return answer
   }
