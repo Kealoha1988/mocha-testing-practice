@@ -8,6 +8,7 @@ const knapsackProblem = testFunction.knapsackProblem
 const checkIfInteger = testFunction.checkIfInteger
 const fizzBuzz = testFunction.fizzBuzz
 const numeralToInteger = testFunction.numeralToInteger
+const anagram = testFunction.anagram
 
 describe('App', () => {
   describe('hello()', () => {
