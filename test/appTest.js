@@ -148,6 +148,11 @@ describe('App', () => {
       assert.equal(result, 4)
     })
   })
-  
+  describe('anagram()', () => {
+    it('should return true if the inputs are anagrams', () => {
+      const result = anagram(cool, loco)
+      assert.equal(result, true)
+    })
+  })
 
 })
