@@ -118,5 +118,9 @@ knapsackProblem: function(items, maxWeight){
        previous = arr.indexOf(numeral[i])
      }
      return answer
+  },
+  //Given two strings s and t, return true if t is an anagram of s, and false otherwise
+  anagram: function(s, t){
+
   }
 }
