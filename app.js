@@ -128,13 +128,22 @@ knapsackProblem: function(items, maxWeight){
     for(let i = 0; i < s.length; i++){
       let letter = s[i]
       if (word[letter]){
-        word[letter] = word[letter]++
+        word[letter]++
         console.log(word)
       }else{
         word[letter] = 1
       }
     }
 
-
+    for (let i = 0; i < t.length; i++){
+      let letter = t[i]
+      if (word[letter]){
+        word[letter]--
+        console.log(word)
+      }else{
+        return false
+      }
+    }
+    return true
   }
 }
