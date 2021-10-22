@@ -121,6 +121,20 @@ knapsackProblem: function(items, maxWeight){
   },
   //Given two strings s and t, return true if t is an anagram of s, and false otherwise
   anagram: function(s, t){
+    if(s.length !== t.length) return false
+
+    word = {}
+
+    for(let i = 0; i < s.length; i++){
+      let letter = s[i]
+      if (word[letter]){
+        word[letter] = word[letter]++
+        console.log(word)
+      }else{
+        word[letter] = 1
+      }
+    }
+
 
   }
 }
