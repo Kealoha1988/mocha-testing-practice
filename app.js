@@ -145,5 +145,8 @@ knapsackProblem: function(items, maxWeight){
       }
     }
     return true
+  },
+  twoNumbers: function(numbs, target){
+    
   }
 }
