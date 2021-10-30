@@ -152,12 +152,12 @@ knapsackProblem: function(items, maxWeight){
     let num = nums[i];
     let numIndex = nums.indexOf(num);
     
-    let res = target - num;
-    let resIndex = nums.lastIndexOf(res);
+    let otherNum = target - num;
+    let otherNumIndex = nums.lastIndexOf(otherNum);
    
     
-    if ((nums.includes(res)) && (numIndex!=resIndex)){
-        return [numIndex,resIndex];
+    if ((nums.includes(res)) && (numIndex!=otherNumIndex)){
+        return [numIndex,otherNumIndex];
       }    
     }
   }
