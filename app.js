@@ -156,7 +156,7 @@ knapsackProblem: function(items, maxWeight){
     let otherNumIndex = nums.lastIndexOf(otherNum);
    
     
-    if ((nums.includes(res)) && (numIndex!=otherNumIndex)){
+    if ((nums.includes(otherNum)) && (numIndex!=otherNumIndex)){
         return [numIndex,otherNumIndex];
       }    
     }
