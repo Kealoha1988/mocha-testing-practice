@@ -159,5 +159,12 @@ describe('App', () => {
       assert.equal(result, false)
     })
   })
+  describe('twoNumbers()', () => {
+    it('should return the indexes of the numbers in array where the sum = target', () => {
+      const arr = [1, 3, 5, 7]
+      const result = twoNumbers(arr, 8)
+      assert.equal(result, [1,2])
+    })
+  })
 
 })
