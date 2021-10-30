@@ -146,7 +146,19 @@ knapsackProblem: function(items, maxWeight){
     }
     return true
   },
+  //Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
   twoNumbers: function(nums, target){
-
+    for(let i = 0; i < nums.length; i++) {     
+    let num = nums[i];
+    let numIndex = nums.indexOf(num);
+    
+    let res = target - num;
+    let resIndex = nums.lastIndexOf(res);
+   
+    
+    if ((nums.includes(res)) && (numIndex!=resIndex)){
+        return [numIndex,resIndex];
+      }    
+    }
   }
 }
