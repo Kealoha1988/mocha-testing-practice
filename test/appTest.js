@@ -10,6 +10,7 @@ const fizzBuzz = testFunction.fizzBuzz
 const numeralToInteger = testFunction.numeralToInteger
 const anagram = testFunction.anagram
 const twoNumbers = testFunction.twoNumbers
+const singleInteger = testFunction.singleInteger
 
 describe('App', () => {
   describe('hello()', () => {
