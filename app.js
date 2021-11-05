@@ -160,5 +160,9 @@ knapsackProblem: function(items, maxWeight){
         return [numIndex,otherNumIndex];
       }    
     }
+  },
+  //GIVEN AN ARRAY OF INTEGERS, EVERY ELEMENT APPEARS TWICE EXCEPT FOR ONE. FIND THAT ONE
+  singleInteger: function(arr){
+
   }
 }
