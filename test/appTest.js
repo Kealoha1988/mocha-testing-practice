@@ -167,5 +167,12 @@ describe('App', () => {
       assert.deepEqual(result, [1, 2])
     })
   })
+  describe('singleInteger()', () => {
+    it('should return the integer that is only present once in the given array', () => {
+      const arr = [1,1,2,2,3,4,4,5,5]
+      const result = singleInteger(arr)
+      assert.equal(result, 3)
+    })
+  })
 
 })
