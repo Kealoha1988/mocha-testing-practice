@@ -179,12 +179,11 @@ module.exports = {
   },
   //How to search a missing number in an array that contains integers from 1 to 100
   missingNumber: function (arr) {
-
     for (let i = 0; i < arr.length; i++) {
       if (arr[i + 1] != arr[i] + 1){
         return arr[i + 1] - 1
       }
     }
-
   }
+
 }
