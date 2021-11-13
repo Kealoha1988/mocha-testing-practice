@@ -176,5 +176,9 @@ module.exports = {
       if (num[key] == 1)
         return key
     }
+  },
+  //How to search a missing number in an array that contains integers from 1 to 100
+  missingNumber: function (arr) {
+    
   }
 }
