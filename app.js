@@ -184,6 +184,10 @@ module.exports = {
         return arr[i] + 1
       }
     }
+  },
+  //How do you check if a string contains only digits?
+  onlyDigits: function (str) {
+    
   }
 
 }
