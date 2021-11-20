@@ -184,10 +184,15 @@ describe('App', () => {
     })
   })
   describe('onlyDigits()', () => {
-    it('should return true if the string given contains only digits', () => {
-      const str = [1,2,3,4,5]
+    it('should return true if the string given contains only numbers', () => {
+      const str = '12345'
       const result = onlyDigits(str)
       assert.equal(result, true)
+    })
+    it('should return false if the string given contained characters other than numbers', () => {
+      const str = 'helloWorld23'
+      const result = onlyDigits(str)
+      assert.equal(result, false)
     })
   })
 
