@@ -12,6 +12,7 @@ const anagram = testFunction.anagram
 const twoNumbers = testFunction.twoNumbers
 const singleInteger = testFunction.singleInteger
 const missingNumber = testFunction.missingNumber
+const onlyDigits = testFunction.onlyDigits
 
 describe('App', () => {
   describe('hello()', () => {
