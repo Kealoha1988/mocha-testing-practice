@@ -187,13 +187,21 @@ module.exports = {
   },
   //How do you check if a string contains only digits?
   onlyDigits: function (str) {
-    let strArray = str.split('')
+    
     let count = 0
-    for (let i = 0; i < strArray.length; i++) {
-      let character = parseInt(strArray[i])
-      if (typeof character === 'number'){
-        count = count++
+    for (let i = 0; i < str.length; i++) {
+      let character = str[i]
+      if (Number.isNaN(parseInt(character)) == false){
+        count = count + 1
+        console.log(parseInt(character))
+        }else{
+          count = count - 1
         }
+    }
+    if (count == str.length){
+      return true
+    }else{
+      return false
     }
   }
 
