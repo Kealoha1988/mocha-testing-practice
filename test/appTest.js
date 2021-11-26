@@ -13,6 +13,7 @@ const twoNumbers = testFunction.twoNumbers
 const singleInteger = testFunction.singleInteger
 const missingNumber = testFunction.missingNumber
 const onlyDigits = testFunction.onlyDigits
+const palindrome = testFunction.palindrome
 
 describe('App', () => {
   describe('hello()', () => {
