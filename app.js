@@ -206,7 +206,13 @@ module.exports = {
   },
   //An integer is a palindrome when it reads the same backward as forward. For example, 121 is palindrome while 123 is not
   palindrome: function (num){
-    
+    let backwardsNum = num.toString().split('').reverse().join('')
+    if(parseInt(backwardsNum) === num){
+        console.log(backwardsNum)
+        return true
+    }else{
+        return false
+    }
   }
 
 }
