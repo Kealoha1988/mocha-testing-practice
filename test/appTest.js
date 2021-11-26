@@ -202,6 +202,11 @@ describe('App', () => {
       const result = palindrome(num)
       assert.equal(result, true)
     })
+    it('should return false if num DOES NOT read the same forwards as backwards', () => {
+      const num = -1132
+      const result = palindrome(num)
+      assert.equal (result, false)
+    })
   })
 
 })
