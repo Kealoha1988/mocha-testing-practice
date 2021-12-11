@@ -216,6 +216,12 @@ describe('App', () => {
       const result = targetIndex(nums, 3)
       assert.equal (result, 2)
     })
+    it('should retun the index of where target sould be in the sorted array', () => {
+      const nums = [1,2,4]
+      const target = 3
+      const result = targetIndex(nums, 3)
+      assert.equal (result, 2)
+    })
   })
 
 })
