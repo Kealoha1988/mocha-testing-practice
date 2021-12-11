@@ -220,6 +220,8 @@ module.exports = {
       if (nums[i] == target){
         console.log(target)
         return nums.indexOf(target)
+      }else{
+        return nums.indexOf(target - 1) + 1
       }
     }
   }
