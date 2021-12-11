@@ -209,5 +209,13 @@ describe('App', () => {
       assert.equal (result, false)
     })
   })
+  describe('targetIndex()', () => {
+    it('should retun the index of target', () => {
+      const nums = [1,2,3,4]
+      const target = 3
+      const result = targetIndex(nums, 3)
+      assert.equal (result, 2)
+    })
+  })
 
 })
