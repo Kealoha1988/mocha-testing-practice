@@ -14,6 +14,7 @@ const singleInteger = testFunction.singleInteger
 const missingNumber = testFunction.missingNumber
 const onlyDigits = testFunction.onlyDigits
 const palindrome = testFunction.palindrome
+const targetIndex = testFunction.targetIndex
 
 describe('App', () => {
   describe('hello()', () => {
