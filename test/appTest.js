@@ -224,6 +224,13 @@ describe('App', () => {
       assert.equal (result, 2)
     })
   })
+  describe('inorderTraversal()', () => {
+    it ('should retrun inorder values of nodes', () => {
+      const root = [1, null, 2,3]
+      const result = inorderTraversal(root)
+      assert.equal (result, [1,2,3])
+    })
+  })
 
 
 })
