@@ -15,6 +15,7 @@ const missingNumber = testFunction.missingNumber
 const onlyDigits = testFunction.onlyDigits
 const palindrome = testFunction.palindrome
 const targetIndex = testFunction.targetIndex
+const inorderTraversal = testFunction.inorderTraversal
 
 describe('App', () => {
   describe('hello()', () => {
@@ -223,5 +224,6 @@ describe('App', () => {
       assert.equal (result, 2)
     })
   })
+
 
 })
